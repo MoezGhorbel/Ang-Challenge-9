@@ -1,0 +1,10 @@
+<div style="border: solid; width: 500px;;">
+  <ul>
+    <li *ngFor="let salle of salles">
+      {{ salle.nom }}&nbsp;<a [routerLink]="['/salles', salle.id]">Détails</a>
+    </li>
+  </ul>
+</div>
+<br>
+
+<router-outlet></router-outlet>
